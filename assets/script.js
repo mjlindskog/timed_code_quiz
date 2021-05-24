@@ -34,6 +34,8 @@ var timerInterval = 0;
 var timer = document.querySelector("#time");
 // The start button
 var startBtn = document.querySelector("#start-quiz");
+// originally planned to mhide and show questions in HTML doc
+// decided to have empty divs where elements could be inserted through function calling
 var questions = document.querySelector("#load-questions");
 var QuestionsDiv = document.querySelector("#questions-div");
 var index = 0;
@@ -109,7 +111,7 @@ function endGame () {
 	questions.innerHTML = "";
 	timer.innerHTML = "";
 	var congrats = document.createElement('h2');
-	congrats.textContent="Congrats on completeing the quiz";
+	congrats.textContent="Congrats on completing the quiz";
 	questions.appendChild(congrats);
 	congrats.setAttribute('class', 'final-score-h2');
 
@@ -133,7 +135,7 @@ function endGame () {
 	submitButton.setAttribute('type', 'submit');
 	submitButton.textContent='submit';
 	questions.appendChild(submitButton);
-	
+
 	// WHEN the game is over
 	// THEN I can save my initials and my score
 	submitButton.addEventListener("click", function() {
@@ -158,4 +160,5 @@ function endGame () {
 
 }
 
+// nothing worked until added this variable
 var points = 0;

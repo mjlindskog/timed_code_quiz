@@ -23,6 +23,6 @@ function clearAllScores() {
 };
 
 function returnStart() {
-    window.location.replace("./index.html");
+    window.location.replace('./index.html');
 
 }
