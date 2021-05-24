@@ -19,10 +19,12 @@ resetBtn.addEventListener("click", clearAllScores);
 function clearAllScores() {
     location.reload();
     localStorage.clear();
+    console.log("yes, this button works too")
 
 };
 
 function returnStart() {
     window.location.replace('./index.html');
+    console.log("Yes, the button works");
 
 }
