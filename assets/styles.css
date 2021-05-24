@@ -1,0 +1,97 @@
+:root{
+  --lightgrey: rgb(218, 218, 218);
+  --purple: rgb(75, 0, 124);
+  --lightpurple: rgb(143, 101, 167);
+
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: var(--purple);
+}
+
+header {
+  display:flex;
+  flex:auto;
+  justify-content: space-between;
+}
+
+h1, h2, h3 {
+  color:var(--purple);
+}
+  
+body {
+  background-color: #f7f8f9;
+}
+
+.container {
+  border-bottom: 10px;
+  border-color: black;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+#load-questions {
+  border-bottom: black 10px;
+}
+
+header {
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  font-size: 16px;
+  color: white;
+  background-color: var(--purple);
+  border-color: var(--purple);
+  border: 0px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+button:hover {
+  background-color: var(--lightpurple);
+}
+
+#questions-div {
+   display: none;
+}
+
+ul li {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  border: 0px var(--purple);
+  border-radius: 25px;
+  background-color: var(--purple);
+}
+
+#timer {
+  color: black;
+}
+
+#time {
+  color: black;
+}
+
+#highscores a:link {
+  color: blue;
+  text-decoration: underline;
+}
+
+#highscores a:visited {
+  color: purple;
+  text-decoration: underline;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+#highscore-header {
+  text-align: center;
+}

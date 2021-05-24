@@ -1,0 +1,63 @@
+<!-- # User Story
+
+```
+AS A coding boot camp student
+I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+SO THAT I can gauge my progress compared to my peers
+```
+
+## Acceptance Criteria
+
+```
+GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a question
+WHEN I answer a question
+THEN I am presented with another question
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over
+WHEN the game is over
+THEN I can save my initials and my score -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="reset" text="text/css" href="assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <title>A Code Quiz by Mark</title>
+</head>
+<body>
+    <header>
+        <div id="timer">
+            Time: <span id="time"></span>
+        </div>
+        <div id="highscores">
+            <a href="/score.html">Veiw Highscores</a>
+        </div>
+    </header>
+    <main class= "container">
+        <div id="load-questions">
+            <h1>A Simple Code Quiz</h1>
+            <h2>You only have 60 seconds to complete the quiz</h2>
+            <h3>Incorrect answers will result in a time reduction penalty</h3>
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+        <!-- buttons below are not used and are hidden -->
+        <div id="questions-div">
+            <button id="a"></button>
+            <button id="b"></button>
+            <button id="c"></button>
+            <button id="d"></button>
+        </div>
+        <div id="results"></div>
+        <div id="high-score"></div>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
